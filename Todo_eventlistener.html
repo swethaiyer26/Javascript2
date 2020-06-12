@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Eventlistener</title>
+    </head>
+    <body>
+        <input type="text">
+        <button>Add todo</button>
+        <ul></ul>
+        <script>
+        var inputEl=document.querySelector("input");
+        var butEl=document.querySelector("button");
+        var ulEl=document.querySelector("ul");
+        
+        var todos=[];
+        butEl.addEventListener('click',addTodo);
+
+        function addTodo(){
+            var userInput=inputEl.value;
+            if(userInput.trim() =='') {
+                return ;
+            }
+            var newTodo={id:Math.random(),value:userInput};
+            todos.push(newTodo);
+            var todoLi=document.createElement('LI');
+            todoLi.textContent=userInput;
+            todoLi.addEventListener('click',removeTodo);
+            todoLi.dataset.id=newTodo.id; 
+            ulEl.appendChild(todoLi);
+            console.log(todos);
+        }
+
+        function removeTodo(event) {
+          var clickLi=event.target;
+          var itemID=clickLi.dataset.id;
+          for(var i=0;i < todos.length;i++) {
+              if(todos[i].id==itemID) {
+                todos.splice(i,1);
+                break;
+              }
+          }
+          clickLi.parentNode.removeChild(clickLi);
+          console.log(todos);
+        }
+        </script>
+    </body>
+</html>
