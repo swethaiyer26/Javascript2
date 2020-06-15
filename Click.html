@@ -1,0 +1,22 @@
+<html>
+    <head>
+    <title>Click</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+     
+<div id="btn1" onclick="alert('hello');">Click me</div>
+<div id="btn2">Click me</div>
+<div id ="btn3">click me</div>
+   var myName="default";
+<script>
+document.getElementById("btn2").addEventListener("click",function(){
+    var myName= prompt("What is your name?");
+    console.log(myName);
+});
+document.getElementById("btn3").addEventListener("click",function(){
+    alert("Hello world")
+});
+</script>
+</body>
+</html>
