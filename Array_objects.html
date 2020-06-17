@@ -1,0 +1,25 @@
+<script>
+    var myObject=new Object();
+    myObject.firstName="Arvind";
+    myObject.lastName="Mittur";
+    myObject.company="Wipro";
+    myObject.age=38;
+    console.log(myObject);
+
+ var myObjectA = {firstName:"swetha",company:"ibm",age:34};
+console.log(myObjectA);
+
+console.log(myObject['firstName']);
+console.log(myObject.company);
+
+var myObjectB=new myName("Arjun","TCS",30) ;
+var myObjectC=new myName("Vaishnavi","CTS",30) ;
+
+function myName(a,b,c){
+    this.firstName=a;
+    this.company=b;
+    this.age=c;
+}
+console.log(myObjectB);
+console.log(myObjectC.firstName);
+</script>

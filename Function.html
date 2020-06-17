@@ -1,0 +1,35 @@
+<script>
+    var b=1;
+
+    function myfunction(a) {
+     b++;
+     console.log(b + " function is called passed value " + a);
+    }
+
+    myfunction("hello");
+    myfunction("world");
+    myfunction("bye");
+    myfunction();
+
+    function myfunctionA(a,c) {
+        //return a* c;
+        var d = a+b+c;
+        b++;
+        return d;
+    }
+
+    console.log(myfunctionA(5,70));
+    console.log(myfunctionA(4,79));
+    console.log(myfunctionA(3,65));
+    console.log(myfunctionA(8,35));
+
+var myObj={firstNmae:"one",lastName:"two"};
+
+function f(g) {
+    g.courses="Javascript";
+}
+console.log(myObj);
+f(myObj);
+console.log(myObj);
+
+</script>
