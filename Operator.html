@@ -1,0 +1,60 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+  <input type="number" name="numA" value="6" id="numA">
+  <input type="number" name="numB" value="23" id="numB">
+  <div>
+    <div id="btn1" class="btn">Get Result</div>
+    <br>
+    <div id="btn2" class="btn">Click me</div>
+  </div>
+  <div>Output:
+    <div id="output">Nothing</div>
+  </div>
+  <ul id="myList">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+  </ul>
+</div>
+<script>
+    var btn1Click=document.getElementById("btn1");
+    var btn2Click=document.getElementById("btn2");
+    var output=document.getElementById("output");
+    var myList=document.getElementById("myList");
+    var myitems=myList.getElementsByTagName("li");
+    console.log(myitems);
+
+    btn1Click.onclick=myfun;
+    btn2Click.onclick=function(){
+       var a=document.getElementById("numA");
+       var b=document.getElementById("numB");
+       var aa=parseInt(a.value);
+       var bb=parseInt(b.value);
+       aa++;
+       bb--;
+       a.value=aa;
+       b.value=bb;
+
+       for(var i=0;i < myitems.length;i++) {
+           console.log(myitems[i]);
+           if (i % 2) {
+           myitems[i].style.backgroundColor="aqua";
+       } else {
+           myitems[i].style.backgroundColor="yellow";
+       }
+    }
+   };
+
+    function myfun() {
+        var a=parseInt(document.getElementById("numA").value);
+        var b=parseInt(document.getElementById("numB").value);
+        output.innerHTML= a+b;
+        output.style.backgroundColor="yellow";
+    }
+</script>
+</body>
+</html>
