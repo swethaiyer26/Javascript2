@@ -1,0 +1,47 @@
+<script>
+const curryGreeting=function(greeting){
+    return function(name) {
+        console.log( greeting + " "  + name);
+    };
+};
+
+const welcomeGreet=curryGreeting("welcome");
+welcomeGreet(" Steve ");
+welcomeGreet(" Mary ");
+</script>
+
+<!-- <script>
+    function name(){
+alert("arjun");
+    }
+</script>
+<body>
+<span onmouseover="name()">click me!!</span>
+</body> -->
+
+<script>
+    function dbclick(txt) {
+        alert(txt);
+    }
+</script>
+<body>
+    <button type="button" ondblclick='dbclick("My custom text")'>Example</button>
+</body>
+
+<script>
+    function StartFocus() {
+        alert("You are focussed");
+    }
+</script>
+<body>
+<input type='text' onfocus='StartFocus();' value=''/>
+</body>
+
+<script>
+    function Blur() {
+        alert("You are leaving the field\nblurred");
+    }
+</script>
+<body>
+<input type="text" onblur='Blur();' value=""/>
+</body>
