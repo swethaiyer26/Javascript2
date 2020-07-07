@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+        var number1=[4,56,67,89,90];
+        var number2=number1.map(myfunction);
+        document.getElementById("demo").innerHTML=number2;
+
+        function myfunction(value,index,array){
+            return value * 2;
+        }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+    <p id="demo1"></p>
+    <script>
+    var x=[34,45,56,78,89];
+    var over35=x.filter(mynumber);
+    document.getElementById("demo1").innerHTML=over35;
+
+    function mynumber(value,index,array) {
+        return value > 35;
+    }
+</script>
+    </body>
+</html>

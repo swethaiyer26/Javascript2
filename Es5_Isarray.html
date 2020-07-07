@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <p id="demo"></p>
+    <button onclick="myfunction()">Try it</button>
+    <script>
+      function myfunction() {
+          var fruits=["Banana","Apple","Mango","Peach"];
+          var x=document.getElementById("demo");
+          x.innerHTML=Array.isArray(fruits);
+      }
+    </script>
+    </body>
+</html>
+
+<html>
+    <body>
+     <p id="demo1"></p> 
+     <script>
+        var txt="";
+        var numbers=[45,65,67,78,89];
+        numbers.forEach(mynumber);
+        document.getElementById("demo1").innerHTML=txt;
+        function mynumber(value) {
+            txt= txt + value + "<br>"
+        }
+     </script>
+    </body>
+</html>

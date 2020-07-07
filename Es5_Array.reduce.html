@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+        var number1=[20,30,40,50];
+        var sum=number1.reduce(myfunction)
+        document.getElementById("demo").innerHTML="the sum is" + sum;
+
+        function myfunction(total,value,index,array) {
+             return total + value;
+        }
+    </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+        var number2=[20,30,40,80];
+        var sum1=number2.reduceRight(mynumber);
+        document.getElementById("demo1").innerHTML="the sum is " + sum1;
+
+        function mynumber(total,value) {
+            return total + value;
+        }
+    </script>
+    </body>
+    </html>
+    <html>
+        <body>
+            <p id="demo2"></p>
+            <script>
+            var number3=[20,30,40,80];
+            var allover18=number3.every(mynumber1);
+            document.getElementById("demo2").innerHTML=allover18;
+    
+            function mynumber1(value) {
+                return value > 18;
+            }
+        </script>
+        </body>
+        </html>

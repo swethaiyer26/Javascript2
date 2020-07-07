@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+        var person={
+            firstName:"John",
+            lastName:"Doe",
+           get fullName() {
+               return this.firstName +  " "  + this.lastName;
+           }
+        };
+        document.getElementById("demo").innerHTML=person.fullName;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+            var person1={
+                firstName:"Johny",
+            lastName:"Doe",
+            language:"NO",
+            get lang() {
+                return this.language;
+            },
+            set lang(value){
+        this.language=value.toUpperCase();
+            }
+            };
+            person1.lang="en";
+            document.getElementById("demo1").innerHTML=person1.lang;
+        </script>
+        </body>
+        </html>

@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+        var person='{"name":"swetha","age":34,"city":"Mumbai"}'
+        var text=JSON.parse(person);
+        document.getElementById("demo").innerHTML=text.name + " , "  + text.city;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+var obj={"name":"arvind","age":38,"city":"Chennai"}
+var myJson=JSON.stringify(obj);
+document.getElementById("demo1").innerHTML=myJson;
+         </script>
+         </body>
+         </html>
+<html>
+    <body>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <script>
+        document.getElementById("demo3").innerHTML=Date.now();
+        var d=new Date();
+        document.getElementById("demo4").innerHTML=d.getTime();
+        </script>
+    </body>
+</html>

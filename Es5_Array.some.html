@@ -1,0 +1,25 @@
+<html>
+ <body>
+     <p id="demo"></p>
+     <script>
+    var number=[20,25,30,35];
+    var somenumber=number.some(mynumber);
+    document.getElementById("demo").innerHTML="some over 25 is "  +  somenumber;
+
+    function mynumber(value){
+        return value > 25;
+    }
+</script>
+ </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script> 
+var fruits = ["Apple", "Orange", "Apple", "Mango"];
+var a = fruits.lastIndexOf("Apple");
+document.getElementById("demo").innerHTML = "Apple is found in position " + (a + 1);
+</script>
+        </body>
+</html>
