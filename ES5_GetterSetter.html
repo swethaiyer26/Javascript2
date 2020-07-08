@@ -1,0 +1,20 @@
+<html>
+    <body>
+    <p id="demo"></p>
+    <script>
+    var person={
+        firstName:"John",
+        lastName:"Doe",
+        language:"NO"
+    }
+
+
+    Object.defineProperty(person ,"language",{
+        get:function() {return language},
+        set:function(value) {language=value.toUpperCase()}
+    });
+    person.language="en";
+    document.getElementById("demo").innerHTML=person.language;
+    </script>
+    </body>
+</html>

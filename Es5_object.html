@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <p id="demo"></p>
+<script>
+        var person={
+            firstName:"John",
+            lastName:"Doe",
+            language:"NO"
+        }
+Object.defineProperty(person,"language",{
+    value:"EN",
+    writable:true,
+    enumerable:true,
+    configurable:true
+});;
+
+var txt="";
+for(var x in person){
+txt += person[x] + "<br>"
+document.getElementById("demo").innerHTML=txt;
+}
+</script>
+    </body>
+</html>
