@@ -1,0 +1,36 @@
+<html>
+    <body>
+    <p id="demo"></p>
+    <script>
+const x=(x,y) => {return x*y};
+document.getElementById("demo").innerHTML=x(5,6);
+</script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+            class Car{
+                constructor(brand){
+                    this.carname=brand;
+                }
+            }
+            myCar=new Car("Audi");
+            document.getElementById("demo1").innerHTML=myCar.carname;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo2"></p>
+        <script>
+            function mynumber(x,y=10) {
+                return x+y;
+            }
+            document.getElementById("demo2").innerHTML=mynumber(7);
+        </script>
+    </body>
+</html>

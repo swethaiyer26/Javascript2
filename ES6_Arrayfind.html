@@ -1,0 +1,71 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var numbers=[4,2,4,6,10];
+            var first=numbers.find(myfunction);
+            document.getElementById("demo").innerHTML=" The number is "  +  first;
+
+            function myfunction(value,index,array) {
+                return value > 4;
+            }
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo1"></p>
+        <script>
+        var number=[10,25,30,40];
+        var second=number.findIndex(mynumber);
+        document.getElementById("demo1").innerHTML="The number is " + second;
+
+        function mynumber(value,index,array) {
+            return value > 30;
+        }
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <p id="demo2"></p>
+        <script>
+            var x=Number.EPSILON;
+            document.getElementById("demo2").innerHTML=x;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo3"></p>
+        <script>
+            var y=Number.MIN_SAFE_INTEGER;
+            document.getElementById("demo3").innerHTML=y;
+        </script>
+    </body>
+</html>
+
+<html>
+    <body>
+        <p id="demo4"></p>
+        <script>
+            var z=Number.MAX_SAFE_INTEGER;
+            document.getElementById("demo4").innerHTML=z;
+        </script>
+        </body>
+        </html>
+
+        <html>
+            <body>
+            <p id="demo5"></p>
+            <script>
+                document.getElementById("demo5").innerHTML=
+                Number.isInteger(10) + " <br>"  + Number.isSafeInteger(11.7) + "<br>"  + Number.isInteger(23.78) + "<br>"
+                 + Number.isSafeInteger(12345678901234567890);
+            </script>
+            </body>
+        </html>
