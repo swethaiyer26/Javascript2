@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function deletecookie(){
+            var now=new Date();
+            now.setMonth(now.getMonth() -1);
+            cookievalue=escape(document.myform.customer.value);
+            document.cookie="name" + cookievalue + ";"
+            document.cookie="delete" + now.toUTCString() + ";"
+            document.write("Setting cookies " +  " name = " + cookievalue);
+       
+        }
+        </script>
+    </head>
+    <body>
+        <form name="myform" action="">
+        Enter name:<input type="text" name="customer"/>
+        <input type="button" value="click" onclick="deletecookie()"/>
+        </form>
+    </body>
+</html>
